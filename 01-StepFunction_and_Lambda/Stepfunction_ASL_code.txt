@@ -1,0 +1,31 @@
+{
+  "Comment": "A Hello World example of the Amazon States Language using Pass states",
+  "StartAt": "CricketToss",
+  "States": {
+    "CricketToss": {
+      "Type": "Choice",
+      "Choices" :[
+        {
+          "Variable":"$.batting",
+          "StringEquals":"batting",
+          "Next":"batting"
+        },
+        {
+          "Variable":"$.bowling",
+          "StringEquals":"bowling",
+          "Next":"bowling" 
+        }
+      ]
+    },
+  "batting" : {
+  "Type":"Task",
+  "Resource":"<yourlambdaARN",
+  "End":true
+},
+ "bowling" : {
+  "Type":"Task",
+  "Resource":"<yourlambdaARN>",
+  "End":true
+}
+}
+}

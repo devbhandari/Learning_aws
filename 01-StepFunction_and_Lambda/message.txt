@@ -1,0 +1,11 @@
+#Pass this to while executing your lambda 1(ProcessPurchase)
+
+{
+  "TransactionType": "Purchase"
+}
+
+
+#Pass this to while executing your lambda 2(ProcessRefund)
+{
+  "TransactionType": "Refund"
+}
