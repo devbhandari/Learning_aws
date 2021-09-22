@@ -1,11 +1,11 @@
-#Pass this to while executing your lambda 1(ProcessPurchase)
+#Pass this to while executing your lambda 1(batting)
 
 {
-  "TransactionType": "Purchase"
+  "batting": "batting"
 }
 
 
-#Pass this to while executing your lambda 2(ProcessRefund)
+#Pass this to while executing your lambda 2(bowling)
 {
-  "TransactionType": "Refund"
+  "bowling": "bowling"
 }
